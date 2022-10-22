@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card</title>
+
+    <script>
+        let count = 0;
+
+        function inc(){
+            count++;
+            document.getElementById("counter").innerHTML = count ;
+        }
+
+        function dec(){
+            count--;
+            document.getElementById("counter").innerHTML = count ;
+        }
+
+        function reset(){
+            count = 0;
+            document.getElementById("counter").innerHTML = count ;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="watch-card-container">
+
+        <div class="watch-card-img">
+            <img src="watch-img.jpg" alt="">
+        </div>
+
+        <div class="watch-card-discription">
+            <div class="discription">
+                <b>Relogio Masculino</b>
+                
+                <p style="margin: 5px; font-size: 13px">Relogio Masculino Lige Mens Watches Top Brand Luxury 
+                    Quartz Gold Watch
+                </p>
+                
+                <b style="margin: 5px;">$49.99</b>
+               
+                <b style="margin: 5px;">⭐⭐⭐⭐⭐</b>
+            </div>
+            <div class="events">
+                <button onClick="dec()" class="event-btn">-</button>
+                <button onClick="reset()" id="counter" class="event-btn">0</button>
+                <button onClick="inc()" class="event-btn">+</button>
+            </div>
+
+            <div class="cart-btn">
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

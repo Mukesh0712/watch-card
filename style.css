@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.watch-card-container{
+   border: 2px solid black;
+   border-radius: 10px;
+   width: 800px;
+   height: 300px;
+   margin: auto;
+   margin-top: 170px;
+   display: flex;
+   justify-content: space-evenly;
+   box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+}
+
+.watch-card-img{
+    width: auto;
+
+}
+
+.watch-card-img img{
+    padding: 20px;
+    height: 290px;
+    border-radius: 20px;
+}
+
+.watch-card-discription{
+    width: 500px;
+}
+
+.watch-card-discription b{
+    text-align: center;
+}
+
+.discription{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.events{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+
+.event-btn{
+    width: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.event-btn:hover{
+    box-shadow: 0 0 20px 2px rgb(114, 114, 114);
+}
+
+.cart-btn{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.cart-btn button{
+    border: none;
+    border-radius: 5px;
+    background: yellow;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
